@@ -1,11 +1,11 @@
 # license_plate_recognition
 Train a YOLOv8 model to detect and recognize license plates using a custom Roboflow dataset. Achieves high accuracy with fast inference, suitable for real-time applications. Easy setup with Python and Ultralytics YOLO
-📸 License Plate Recognition with YOLOv8
+
+## License Plate Recognition with YOLOv8
 
 This project trains a YOLOv8 model to detect and recognize license plates using a custom dataset from Roboflow. It achieves high accuracy with fast inference, supporting real-time applications. Easy to install and train with Python and Ultralytics YOLO.
 
-🚀 Features
-
+### Features
 Uses YOLOv8n for fast and lightweight detection.
 
 Integrates with Roboflow API to download annotated datasets.
@@ -15,7 +15,6 @@ Trains on custom license plate dataset for 15 epochs.
 Achieves high accuracy with mAP50 ≈ 0.96 and mAP50-95 ≈ 0.69.
 
 Supports real-time inference and evaluation.
-
 🧰 Installation
 
 pip install ultralytics roboflow
