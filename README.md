@@ -21,7 +21,7 @@ Install the required dependencies:
 ```bash
 pip install ultralytics roboflow
 ```
-##📦 Dataset
+## 📦 Dataset
 
 - Source: Roboflow workspace – nesma-4qzxa
 
@@ -31,9 +31,9 @@ pip install ultralytics roboflow
 
 - Format: YOLOv11
 
-🏋️‍♀️ Training
-``` from ultralytics import YOLO
-
+## 🏋️‍♀️ Training
+```
+from ultralytics import YOLO
 model = YOLO("yolov8n.pt")
 
 model.train(
@@ -43,3 +43,34 @@ model.train(
     batch=8
 )
 ```
+
+---
+
+## 📊 Performance
+|      Metric      | Value |
+| :--------------: | :---: |
+|   **Precision**  | 0.981 |
+|    **Recall**    | 0.929 |
+|    **mAP@0.5**   | 0.966 |
+| **mAP@0.5:0.95** | 0.693 |
+
+## 📁 Output
+
+🧠 Trained weights saved to:
+```runs/detect/train/weights/best.pt```
+
+📊 Training logs and label plots:
+``` runs/detect/train/ ```
+
+## 📌 Notes
+
+- 🚀 Model uses Automatic Mixed Precision (AMP) for faster training
+
+- 🧮 Data augmentation includes blur, grayscale, and CLAHE
+
+- 💻 GPU used: Tesla T4 with CUDA acceleration
+
+## 💬 Acknowledgements
+
+Thanks to Roboflow and Ultralytics for their open-source tools that made this project possible.
+##### Made with ❤️ by Nesma.
